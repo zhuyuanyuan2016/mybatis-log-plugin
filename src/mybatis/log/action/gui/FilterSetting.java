@@ -22,7 +22,6 @@ public class FilterSetting extends JDialog {
     private JTextArea textArea;
     private JTextField preparingTextField;
     private JTextField parametersTextField;
-    private JCheckBox startupCheckBox;
 
     public FilterSetting(Project project) {
         this.setTitle("Filter Setting"); //设置标题
@@ -33,8 +32,6 @@ public class FilterSetting extends JDialog {
         }
         this.preparingTextField.setText(ConfigUtil.getPreparing(project));
         this.parametersTextField.setText(ConfigUtil.getParameters(project));
-        int startup = PropertiesComponent.getInstance(project).getInt(StringConst.STARTUP_KEY, 1);
-        startupCheckBox.setSelected(startup == 1);
 
         setContentPane(contentPane);
         setModal(true);
@@ -79,7 +76,6 @@ public class FilterSetting extends JDialog {
         }
         ConfigUtil.setPreparing(project, preparingText);
         ConfigUtil.setParameters(project, parametersText);
-        ConfigUtil.setStartup(project, startupCheckBox.isSelected() ? 1 : 0);
         this.setVisible(false);
     }
 
