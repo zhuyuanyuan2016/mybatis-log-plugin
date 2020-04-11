@@ -29,7 +29,7 @@ public class RestoreSqlForSelection extends AnAction {
     private static boolean isEnd = false;
 
     public RestoreSqlForSelection(){
-        super(null,null, Icons.MyBatisIcon);
+        super("","", Icons.MyBatisIcon);
     }
 
     @Override
@@ -89,9 +89,6 @@ public class RestoreSqlForSelection extends AnAction {
                         ConfigUtil.setIndexNum(project, ++indexNum);
                         PrintUtil.println(project, preStr, ConsoleViewContentType.USER_INPUT);
                         String restoreSql = RestoreSqlUtil.restoreSql(project, preparingLine, parametersLine);
-                        if(ConfigUtil.getSqlFormat(project)) {
-                            restoreSql = PrintUtil.format(restoreSql);
-                        }
                         PrintUtil.println(project, restoreSql, PrintUtil.getOutputAttributes(null, new Color(255,200,0)));//高亮显示
                         PrintUtil.println(project, StringConst.SPLIT_LINE, ConsoleViewContentType.USER_INPUT);
                         this.reset();
