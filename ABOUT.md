@@ -15,7 +15,7 @@
 
 那既然开源了，应该有个它的开源协议。  
 目前仓库没有LICENSE，也就是采用默认协议，[参考这里](https://help.github.com/cn/github/creating-cloning-and-archiving-repositories/licensing-a-repository)  
-以及附加我目前个人的一些要求：
+以及附加我个人目前的一些要求：
 * 个人使用，要去修改源码，编译插件兼容各个版本，本地安装，都是允许的。
 * 企业用户，修改编译后的插件不允许在相关IDE2020以上版本使用。
 * **绝对禁止，修改编译过的插件重新发布到仓库或共享出去。**
