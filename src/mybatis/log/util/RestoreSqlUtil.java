@@ -17,7 +17,6 @@ public class RestoreSqlUtil {
     private static Set<String> unneedAssembledType = new HashSet<>();
     private static final String QUESTION_MARK = "?";
     private static final String REPLACE_MARK = "_o_?_b_";
-//    private static final String PARAM_TYPE_REGEX = "\\(\\D{3,30}?\\),{0,1}";
     private static final String PARAM_TYPE_REGEX = "\\(String\\),{0,1}|\\(Timestamp\\),{0,1}|\\(Date\\),{0,1}|\\(Time\\),{0,1}|\\(LocalDate\\),{0,1}|\\(LocalTime\\),{0,1}|\\(LocalDateTime\\),{0,1}|\\(Byte\\),{0,1}|\\(Short\\),{0,1}|\\(Integer\\),{0,1}|\\(Long\\),{0,1}|\\(Float\\),{0,1}|\\(Double\\),{0,1}|\\(BigDecimal\\),{0,1}|\\(Boolean\\),{0,1}|\\(Null\\),{0,1}";
     private static final String PARAM_TYPE_REGEX2 = "(\\(String\\))|(\\(Timestamp\\))|(\\(Date\\))|(\\(Time\\))|(\\(LocalDate\\))|(\\(LocalTime\\))|(\\(LocalDateTime\\))|(\\(Byte\\))|(\\(Short\\))|(\\(Integer\\))|(\\(Long\\))|(\\(Float\\))|(\\(Double\\))|(\\(BigDecimal\\))|(\\(Boolean\\))|(\\(Null\\))";
 
