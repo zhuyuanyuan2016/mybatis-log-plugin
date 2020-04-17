@@ -25,7 +25,7 @@
 就我身边朋友同事的情况，intellij等IDE用正版的比例还是少数。  
 国内收入以及一些情况大家都懂的，所以大家互相理解吧，能支持正版尽量支持正版。  
 国外用户的正版比例应该比较多，所以我是希望这插件能有更多的国外友人支持。  
-因为特别要提的一点：~~非正版用户的IDE，购买完插件，也无法直接激活插件~~  
+因为特别要提的一点：**非正版用户的IDE，购买完插件，也无法直接激活插件**。  
 为此特地增加了本地授权验证的**特殊版本**，详情查看这里 [激活失败问题处理](https://github.com/kookob/mybatis-log-plugin/blob/master/activation.md)  
 另外推广下正在尝试的一款新插件：  
 [Smart Jump](https://plugins.jetbrains.com/plugin/14053-smart-jump)  
