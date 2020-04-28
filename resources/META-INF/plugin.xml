@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>MyBatisLogPlugin</id>
-    <name>MyBatis Log Plugin</name>
+    <id>MyBatisLogPlugin-02</id>
+    <name>MyBatis Log Plugin-02</name>
     <version>2.1.1</version>
     <vendor email="kookob@gmail.com" url="">ob</vendor>
 
@@ -25,7 +25,8 @@
     ]]>
     </change-notes>
 
-    <idea-version since-build="181" until-build="193.*"/>
+<!--    <idea-version since-build="181" until-build="193.*"/>-->
+    <idea-version since-build="201" />
 
     <extensions defaultExtensionNs="com.intellij">
         <consoleFilterProvider implementation="mybatis.log.MyBatisLogProvider"/>
